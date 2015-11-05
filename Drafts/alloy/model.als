@@ -111,8 +111,29 @@ fact ActionPropreties {
 
 // ASSERTIONS
 
+//two reservations can't occure in the same time
+
+//starting point and destination have to be different
+
+//adding and deleting a user (consistency)
+
+//adding and deleting an action for a same user (consistency)
+
+// PREDICATES
+
+pred show {
+	#Request>3
+	#Reserve>1	
+}
+
+run show for 6
+
+//add a user
+
+//add a request
+
+//add a reservation
 
 
-pred show {}
 
-run show for 4 but 3 Reserve
+
